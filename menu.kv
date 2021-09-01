@@ -1,0 +1,25 @@
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, .85
+        Rectangle:
+            size: self.size
+            source: 'images/TGF.jpg'
+    Label:
+        font_size: dp(110)
+        color: 1, 0, 0, 1
+        font_name: 'fonts/civitype.ttf'
+        text:root.parent.menu_title
+        pos_hint: { "center_x": .5, "center_y": .6}
+    Button:
+        font_size: dp(60)
+        color: 0, 1, 0, 1
+        font_name: 'fonts/PAINP.TTF'
+        text:root.parent.menu_button_title
+        pos_hint: { "center_x": .5, "center_y": .3}
+        size_hint: .2, .15
+        on_press: root.parent.on_menu_button_pressed()
+        background_normal: ''
+        background_color: 1, .3, .4, 1
+
+

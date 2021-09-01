@@ -1,0 +1,23 @@
+#:import menu menu
+SpaceTraveller:
+
+
+<SpaceTraveller>
+    menu_widget:menu_widget
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: 'images/SPACE_TRAVELLER.png'
+    perspective_point_x: self.width/2
+    perspective_point_y: self.height*0.75
+
+
+    MenuWidget:
+        id: menu_widget
+    Label:
+        text: root.score
+        font_size: dp(30)
+        color: 0, 0, 1, 1
+        font_name: 'fonts/GravitasOne.ttf'
+        size_hint: .40, .1
+        pos_hint:{"x": 0, "top": 1}
